@@ -1,0 +1,60 @@
+{
+  "modelo": "dolar",
+  "nombre": "Precio del Dólar",
+  "variable_objetivo": "Precio_Dolar",
+  "unidad_objetivo": "unidades monetarias",
+  "variables": [
+    "Dia",
+    "Inflacion",
+    "Tasa_interes"
+  ],
+  "intercepto": 3985.7832908942446,
+  "coeficientes": {
+    "Dia": 4.984338715884641,
+    "Inflacion": -870.7317083114698,
+    "Tasa_interes": -1.3774312878081811
+  },
+  "evaluacion": {
+    "metricas": {
+      "r2": 0.996312811756911,
+      "mae": 37.00645389507638,
+      "mse": 2376.9708765724663,
+      "rmse": 48.754188297750034,
+      "n_muestras": 100.0,
+      "r2_ajustado": 0.9961975871243145
+    },
+    "metricas_prueba": {
+      "r2": 0.996312811756911,
+      "mae": 37.00645389507638,
+      "mse": 2376.9708765724663,
+      "rmse": 48.754188297750034,
+      "n_muestras": 100.0,
+      "r2_ajustado": 0.9961975871243145
+    },
+    "metricas_completo": {
+      "r2": 0.9951436343497271,
+      "mae": 39.77624722733652,
+      "mse": 2539.7637995243736,
+      "rmse": 50.396069286447066,
+      "n_muestras": 500.0,
+      "r2_ajustado": 0.9951142611703907
+    },
+    "linea_base": {
+      "r2": 0.0,
+      "mae": 725.2967981039161,
+      "mse": 646715.3605002954,
+      "rmse": 804.1861479161995,
+      "n_muestras": 100.0
+    },
+    "mejora_rmse_vs_linea_base": 0.9393744987723532
+  },
+  "interpretacion_desempeno": "El ajuste es excelente: R² = 0.9963, es decir, el modelo reproduce casi por completo la variabilidad observada (99.63 % de la varianza de Precio del dólar). En promedio, el error de predicción es de 37.0065 unidades monetarias (MAE) y la desviación típica del error es de 48.7542 unidades monetarias (RMSE).",
+  "residuos": {
+    "residuo_medio": 1.7652747214952442,
+    "residuo_std": 50.41558357111078,
+    "residuo_min": -158.87922946738763,
+    "residuo_max": 144.85943095692437,
+    "asimetria": -0.028333288448883106,
+    "curtosis": 0.04475913944391019
+  }
+}

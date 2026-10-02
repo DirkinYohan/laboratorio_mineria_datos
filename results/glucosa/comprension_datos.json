@@ -1,0 +1,72 @@
+{
+  "modelo": "glucosa",
+  "nombre": "Nivel de Glucosa",
+  "filas": 2000,
+  "columnas": [
+    "Edad",
+    "IMC",
+    "Actividad_Fisica",
+    "Nivel_Glucosa"
+  ],
+  "nulos": {
+    "Edad": 0,
+    "IMC": 0,
+    "Actividad_Fisica": 0,
+    "Nivel_Glucosa": 0
+  },
+  "duplicados": 0,
+  "perfil_columnas": [
+    {
+      "nombre": "Edad",
+      "tipo": "int64",
+      "nulos": 0,
+      "unicos": 60,
+      "atipicos_iqr": 0,
+      "minimo": 20.0,
+      "maximo": 79.0,
+      "media": 49.157,
+      "desviacion": 17.544493598500182,
+      "asimetria": 0.00026490930909948046,
+      "fuera_de_rango": 0
+    },
+    {
+      "nombre": "IMC",
+      "tipo": "float64",
+      "nulos": 0,
+      "unicos": 2000,
+      "atipicos_iqr": 16,
+      "minimo": 10.586716611072555,
+      "maximo": 39.43022745196606,
+      "media": 24.96332852372851,
+      "desviacion": 3.9835875019250233,
+      "asimetria": -0.02356463138720596,
+      "fuera_de_rango": 0
+    },
+    {
+      "nombre": "Actividad_Fisica",
+      "tipo": "int64",
+      "nulos": 0,
+      "unicos": 10,
+      "atipicos_iqr": 0,
+      "minimo": 0.0,
+      "maximo": 9.0,
+      "media": 4.6645,
+      "desviacion": 2.9122466138996685,
+      "asimetria": -0.07763671243662817,
+      "fuera_de_rango": 0
+    },
+    {
+      "nombre": "Nivel_Glucosa",
+      "tipo": "float64",
+      "nulos": 0,
+      "unicos": 2000,
+      "atipicos_iqr": 3,
+      "minimo": 43.415923806929655,
+      "maximo": 227.5606926540165,
+      "media": 139.6301292343726,
+      "desviacion": 27.342945330981937,
+      "asimetria": 0.03615414637400041,
+      "fuera_de_rango": 0
+    }
+  ]
+}

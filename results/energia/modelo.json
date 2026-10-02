@@ -1,0 +1,76 @@
+{
+  "modelo": "Consumo_Energia",
+  "variables": [
+    "Temperatura",
+    "Hora",
+    "Dia_Semana"
+  ],
+  "intercepto": 101.28823172887473,
+  "ecuacion": "Consumo_Energia = 101.2882 + 9.9529·Temperatura + 5.0198·Hora - 3.0312·Dia_Semana",
+  "coeficientes": [
+    {
+      "variable": "Temperatura",
+      "coeficiente": 9.952865907791665,
+      "error_estandar": 0.04478814667879838,
+      "t": 222.22098134958355,
+      "p_valor": 0.0,
+      "beta_estandarizado": 0.7802901822787961,
+      "VIF": 1.0004046098929749,
+      "ic_95": [
+        9.865069463541596,
+        10.040662352041737
+      ],
+      "significativo": true,
+      "interpretacion_significancia": "altamente significativo (p < 0,001)"
+    },
+    {
+      "variable": "Hora",
+      "coeficiente": 5.019813389575856,
+      "error_estandar": 0.032258127805888756,
+      "t": 155.61390976507616,
+      "p_valor": 0.0,
+      "beta_estandarizado": 0.5464071944729568,
+      "VIF": 1.0003903888240155,
+      "ic_95": [
+        4.956579049029642,
+        5.083047730122091
+      ],
+      "significativo": true,
+      "interpretacion_significancia": "altamente significativo (p < 0,001)"
+    },
+    {
+      "variable": "Dia_Semana",
+      "coeficiente": -3.031176657433644,
+      "error_estandar": 0.11150934861619678,
+      "t": -27.18316172634664,
+      "p_valor": 0.0,
+      "beta_estandarizado": -0.09543221882395812,
+      "VIF": 1.0000544030049903,
+      "ic_95": [
+        -3.249764052428001,
+        -2.8125892624392894
+      ],
+      "significativo": true,
+      "interpretacion_significancia": "altamente significativo (p < 0,001)"
+    }
+  ],
+  "variable_mayor_impacto": {
+    "segun_beta_estandarizado": "Temperatura",
+    "beta_estandarizado": 0.7802901822787961
+  },
+  "metricas_entrenamiento": {
+    "r2": 0.9014539402878962,
+    "mae": 15.917385945120808,
+    "mse": 399.1936567789163,
+    "rmse": 19.979831250011006,
+    "n_muestras": 8000.0
+  },
+  "metricas_prueba": {
+    "r2": 0.8968196536749335,
+    "mae": 16.510114230844557,
+    "mse": 429.51869176035575,
+    "rmse": 20.724832731782318,
+    "n_muestras": 2000.0
+  },
+  "nota_metodologica": "Las tres variables resultaron estadísticamente significativas (p < 0,001). 'Temperatura' presenta el mayor impacto sobre el consumo según el coeficiente estandarizado, seguida de 'Hora' y 'Dia_Semana'. 'Hora' y 'Dia_Semana' se mantienen en escala lineal: se verificó que la codificación cíclica seno/coseno reduce el R² de prueba, porque 'Hora' es una rampa monótona y no un ciclo horario. Los VIF cercanos a 1 descartan multicolinealidad."
+}

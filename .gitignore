@@ -1,0 +1,51 @@
+# --- Entornos virtuales ---
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Datos generados (solo se versionan los crudos en data/raw) ---
+data/processed/*.csv
+
+# --- Modelos entrenados (artefactos binarios regenerables) ---
+models/*/*.joblib
+models/*/*.pkl
+
+# --- Visualizaciones generadas ---
+visualizations/*/*.png
+visualizations/*/*.jpg
+visualizations/*/*.svg
+visualizations/*/*.pdf
+
+# --- Informe (documento generado) ---
+informe/informe.md
+informe/*.pdf
+informe/*.docx
+
+# --- Pruebas y cobertura ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Editores y sistema operativo ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# NOTA: los archivos de results/ SÍ se versionan a propósito, porque el informe
+# y la interfaz web se generan a partir de ellos y son la evidencia de los
+# resultados obtenidos.

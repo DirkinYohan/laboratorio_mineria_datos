@@ -1,0 +1,14 @@
+{
+  "modelo": "glucosa",
+  "filas_antes": 2000,
+  "filas_despues": 2000,
+  "filas_eliminadas": 0,
+  "detalle_eliminacion": {
+    "nulos": 0,
+    "duplicados": 0,
+    "fuera_de_rango": 0
+  },
+  "criterio_atipicos": "Los valores atípicos se detectan con el criterio IQR (1,5) y se documentan en la auditoría. No se eliminan porque ninguno resultó imposible: todos caen dentro de rangos plausibles del dominio, por lo que representan variabilidad real del fenómeno.",
+  "nota_codificacion": "Se conservó 'Actividad_Fisica' como variable ordinal (0-9). Se comparó con su codificación en variables ficticias y la diferencia de R² fue despreciable, por lo que se mantiene la escala original, más interpretable y con menos parámetros.",
+  "archivo_procesado": "glucosa_clean.csv"
+}

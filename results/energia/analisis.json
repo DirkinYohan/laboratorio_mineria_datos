@@ -1,0 +1,60 @@
+{
+  "modelo": "energia",
+  "nombre": "Consumo de Energía",
+  "variable_objetivo": "Consumo_Energia",
+  "unidad_objetivo": "kWh",
+  "variables": [
+    "Temperatura",
+    "Hora",
+    "Dia_Semana"
+  ],
+  "intercepto": 101.28823172887473,
+  "coeficientes": {
+    "Temperatura": 9.952865907791665,
+    "Hora": 5.019813389575856,
+    "Dia_Semana": -3.031176657433644
+  },
+  "evaluacion": {
+    "metricas": {
+      "r2": 0.8968196536749335,
+      "mae": 16.510114230844557,
+      "mse": 429.51869176035575,
+      "rmse": 20.724832731782318,
+      "n_muestras": 2000.0,
+      "r2_ajustado": 0.8966645729940843
+    },
+    "metricas_prueba": {
+      "r2": 0.8968196536749335,
+      "mae": 16.510114230844557,
+      "mse": 429.51869176035575,
+      "rmse": 20.724832731782318,
+      "n_muestras": 2000.0,
+      "r2_ajustado": 0.8966645729940843
+    },
+    "metricas_completo": {
+      "r2": 0.9005071149829794,
+      "mae": 16.035931602265556,
+      "mse": 405.25866377520424,
+      "rmse": 20.131037324867396,
+      "n_muestras": 10000.0,
+      "r2_ajustado": 0.9004772551735505
+    },
+    "linea_base": {
+      "r2": 0.0,
+      "mae": 51.443100660364216,
+      "mse": 4162.901411618731,
+      "rmse": 64.52055030467992,
+      "n_muestras": 2000.0
+    },
+    "mejora_rmse_vs_linea_base": 0.6787871052879245
+  },
+  "interpretacion_desempeno": "El ajuste es muy bueno: R² = 0.8968, es decir, el modelo explica la mayor parte de la variabilidad del fenómeno (89.68 % de la varianza de Consumo de energía). En promedio, el error de predicción es de 16.5101 kWh (MAE) y la desviación típica del error es de 20.7248 kWh (RMSE).",
+  "residuos": {
+    "residuo_medio": 0.08951430782267294,
+    "residuo_std": 20.131844924941863,
+    "residuo_min": -77.20009351682899,
+    "residuo_max": 88.62043917071935,
+    "asimetria": -0.011683538971695199,
+    "curtosis": 0.030601302986068113
+  }
+}

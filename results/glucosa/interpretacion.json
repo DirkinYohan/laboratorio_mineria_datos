@@ -1,0 +1,56 @@
+{
+  "modelo": "glucosa",
+  "ecuacion": "Nivel_Glucosa = 65.8609 + 1.2266·Edad + 0.9334·IMC - 2.0853·Actividad_Fisica",
+  "intercepto": 65.86086530452525,
+  "criterio_mayor_impacto": "Se compara el valor absoluto del coeficiente estandarizado (β). El coeficiente bruto no es comparable entre variables porque sus escalas difieren (años, kg/m² y nivel de actividad).",
+  "variable_mayor_impacto": "Edad",
+  "ranking_impacto": [
+    {
+      "posicion": 1,
+      "variable": "Edad",
+      "beta_estandarizado": 0.7873655881000831
+    },
+    {
+      "posicion": 2,
+      "variable": "Actividad_Fisica",
+      "beta_estandarizado": -0.222882233966702
+    },
+    {
+      "posicion": 3,
+      "variable": "IMC",
+      "beta_estandarizado": 0.13587765135386964
+    }
+  ],
+  "interpretaciones": [
+    {
+      "variable": "Edad",
+      "etiqueta": "Edad",
+      "coeficiente": 1.226590034499573,
+      "p_valor": 0.0,
+      "beta_estandarizado": 0.7873655881000831,
+      "significativo": true,
+      "significancia": "altamente significativo (p < 0,001)",
+      "interpretacion": "Por cada unidad adicional de Edad (años), Nivel de glucosa aumenta en promedio 1.2266 mg/dL, manteniendo constantes las demás variables."
+    },
+    {
+      "variable": "Actividad_Fisica",
+      "etiqueta": "Actividad física",
+      "coeficiente": -2.085276343043282,
+      "p_valor": 0.0,
+      "beta_estandarizado": -0.222882233966702,
+      "significativo": true,
+      "significancia": "altamente significativo (p < 0,001)",
+      "interpretacion": "Por cada unidad adicional de Actividad física (nivel (0-9)), Nivel de glucosa disminuye en promedio 2.0853 mg/dL, manteniendo constantes las demás variables."
+    },
+    {
+      "variable": "IMC",
+      "etiqueta": "IMC",
+      "coeficiente": 0.9333730560350988,
+      "p_valor": 0.0,
+      "beta_estandarizado": 0.13587765135386964,
+      "significativo": true,
+      "significancia": "altamente significativo (p < 0,001)",
+      "interpretacion": "Por cada unidad adicional de IMC (kg/m²), Nivel de glucosa aumenta en promedio 0.9334 mg/dL, manteniendo constantes las demás variables."
+    }
+  ]
+}

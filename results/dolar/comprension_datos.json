@@ -1,0 +1,72 @@
+{
+  "modelo": "dolar",
+  "nombre": "Precio del Dólar",
+  "filas": 500,
+  "columnas": [
+    "Dia",
+    "Inflacion",
+    "Tasa_interes",
+    "Precio_Dolar"
+  ],
+  "nulos": {
+    "Dia": 0,
+    "Inflacion": 0,
+    "Tasa_interes": 0,
+    "Precio_Dolar": 0
+  },
+  "duplicados": 0,
+  "perfil_columnas": [
+    {
+      "nombre": "Dia",
+      "tipo": "int64",
+      "nulos": 0,
+      "unicos": 500,
+      "atipicos_iqr": 0,
+      "minimo": 1.0,
+      "maximo": 500.0,
+      "media": 250.5,
+      "desviacion": 144.4818327679989,
+      "asimetria": 0.0,
+      "fuera_de_rango": 0
+    },
+    {
+      "nombre": "Inflacion",
+      "tipo": "float64",
+      "nulos": 0,
+      "unicos": 500,
+      "atipicos_iqr": 4,
+      "minimo": 0.0037936632996546,
+      "maximo": 0.0392636574532736,
+      "media": 0.02003418997294319,
+      "desviacion": 0.004906266236809266,
+      "asimetria": 0.18016389341824773,
+      "fuera_de_rango": 0
+    },
+    {
+      "nombre": "Tasa_interes",
+      "tipo": "float64",
+      "nulos": 0,
+      "unicos": 500,
+      "atipicos_iqr": 7,
+      "minimo": 3.6515566785292144,
+      "maximo": 6.316191032418695,
+      "media": 5.015913058528001,
+      "desviacion": 0.4889985975877357,
+      "asimetria": 0.05382306409000192,
+      "fuera_de_rango": 0
+    },
+    {
+      "nombre": "Precio_Dolar",
+      "tipo": "float64",
+      "nulos": 0,
+      "unicos": 500,
+      "atipicos_iqr": 0,
+      "minimo": 3940.361344787676,
+      "maximo": 6553.5985827644245,
+      "media": 5211.771933901323,
+      "desviacion": 723.8952124494866,
+      "asimetria": 0.021372394490148154,
+      "fuera_de_rango": 0
+    }
+  ]
+}

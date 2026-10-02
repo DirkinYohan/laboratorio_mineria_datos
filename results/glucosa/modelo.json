@@ -1,0 +1,76 @@
+{
+  "modelo": "Nivel_Glucosa",
+  "variables": [
+    "Edad",
+    "IMC",
+    "Actividad_Fisica"
+  ],
+  "intercepto": 65.86086530452525,
+  "ecuacion": "Nivel_Glucosa = 65.8609 + 1.2266·Edad + 0.9334·IMC - 2.0853·Actividad_Fisica",
+  "coeficientes": [
+    {
+      "variable": "Edad",
+      "coeficiente": 1.226590034499573,
+      "error_estandar": 0.021848945578801425,
+      "t": 56.13955282536147,
+      "p_valor": 0.0,
+      "beta_estandarizado": 0.7873655881000831,
+      "VIF": 1.0004877362240854,
+      "ic_95": [
+        1.1837343878854794,
+        1.2694456811136619
+      ],
+      "significativo": true,
+      "interpretacion_significancia": "altamente significativo (p < 0,001)"
+    },
+    {
+      "variable": "IMC",
+      "coeficiente": 0.9333730560350988,
+      "error_estandar": 0.09633993358156216,
+      "t": 9.688329868370735,
+      "p_valor": 0.0,
+      "beta_estandarizado": 0.13587765135386964,
+      "VIF": 1.0004491877585977,
+      "ic_95": [
+        0.7444069508514141,
+        1.122339161218789
+      ],
+      "significativo": true,
+      "interpretacion_significancia": "altamente significativo (p < 0,001)"
+    },
+    {
+      "variable": "Actividad_Fisica",
+      "coeficiente": -2.085276343043282,
+      "error_estandar": 0.13120879986920694,
+      "t": -15.892808600657506,
+      "p_valor": 0.0,
+      "beta_estandarizado": -0.222882233966702,
+      "VIF": 1.0003371675811363,
+      "ic_95": [
+        -2.342636037568285,
+        -1.8279166485182783
+      ],
+      "significativo": true,
+      "interpretacion_significancia": "altamente significativo (p < 0,001)"
+    }
+  ],
+  "variable_mayor_impacto": {
+    "segun_beta_estandarizado": "Edad",
+    "beta_estandarizado": 0.7873655881000831
+  },
+  "metricas_entrenamiento": {
+    "r2": 0.686212181790227,
+    "mae": 12.109321980867112,
+    "mse": 235.51368494080378,
+    "rmse": 15.346455126210866,
+    "n_muestras": 1600.0
+  },
+  "metricas_prueba": {
+    "r2": 0.6813715865404841,
+    "mae": 12.2197825744646,
+    "mse": 233.69300045085822,
+    "rmse": 15.287020653183479,
+    "n_muestras": 400.0
+  },
+  "nota_metodologica": "Las tres variables resultaron estadísticamente significativas (p < 0,001). 'Edad' presenta el mayor impacto sobre el nivel de glucosa según el coeficiente estandarizado, seguida de 'Actividad_Fisica' e 'IMC'. Los VIF cercanos a 1 descartan multicolinealidad. El criterio de comparación es el β estandarizado, porque los coeficientes brutos no son comparables entre variables medidas en escalas distintas (años, kg/m² y nivel 0-9)."
+}

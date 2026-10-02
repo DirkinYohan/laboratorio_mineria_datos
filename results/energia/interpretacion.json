@@ -1,0 +1,56 @@
+{
+  "modelo": "energia",
+  "ecuacion": "Consumo_Energia = 101.2882 + 9.9529·Temperatura + 5.0198·Hora - 3.0312·Dia_Semana",
+  "intercepto": 101.28823172887473,
+  "criterio_mayor_impacto": "Se compara el valor absoluto del coeficiente estandarizado (β). El coeficiente bruto no es comparable entre variables porque sus escalas difieren (°C, hora y día de la semana).",
+  "variable_mayor_impacto": "Temperatura",
+  "ranking_impacto": [
+    {
+      "posicion": 1,
+      "variable": "Temperatura",
+      "beta_estandarizado": 0.7802901822787961
+    },
+    {
+      "posicion": 2,
+      "variable": "Hora",
+      "beta_estandarizado": 0.5464071944729568
+    },
+    {
+      "posicion": 3,
+      "variable": "Dia_Semana",
+      "beta_estandarizado": -0.09543221882395812
+    }
+  ],
+  "interpretaciones": [
+    {
+      "variable": "Temperatura",
+      "etiqueta": "Temperatura",
+      "coeficiente": 9.952865907791665,
+      "p_valor": 0.0,
+      "beta_estandarizado": 0.7802901822787961,
+      "significativo": true,
+      "significancia": "altamente significativo (p < 0,001)",
+      "interpretacion": "Por cada unidad adicional de Temperatura (°C), Consumo de energía aumenta en promedio 9.9529 kWh, manteniendo constantes las demás variables."
+    },
+    {
+      "variable": "Hora",
+      "etiqueta": "Hora",
+      "coeficiente": 5.019813389575856,
+      "p_valor": 0.0,
+      "beta_estandarizado": 0.5464071944729568,
+      "significativo": true,
+      "significancia": "altamente significativo (p < 0,001)",
+      "interpretacion": "Por cada unidad adicional de Hora (hora (1-24)), Consumo de energía aumenta en promedio 5.0198 kWh, manteniendo constantes las demás variables."
+    },
+    {
+      "variable": "Dia_Semana",
+      "etiqueta": "Día de la semana",
+      "coeficiente": -3.031176657433644,
+      "p_valor": 0.0,
+      "beta_estandarizado": -0.09543221882395812,
+      "significativo": true,
+      "significancia": "altamente significativo (p < 0,001)",
+      "interpretacion": "Por cada unidad adicional de Día de la semana (día (1-7)), Consumo de energía disminuye en promedio 3.0312 kWh, manteniendo constantes las demás variables."
+    }
+  ]
+}

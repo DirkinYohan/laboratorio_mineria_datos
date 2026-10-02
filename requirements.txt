@@ -1,0 +1,22 @@
+# ============================================================
+# Laboratorio de Minería de Datos - CRISP-DM + Regresión Lineal
+# ============================================================
+# Compatible con Python >= 3.11
+
+# --- Manipulación y análisis de datos ---
+pandas>=2.2          # DataFrames y E/S de CSV
+numpy>=1.26          # Álgebra y operaciones vectorizadas
+
+# --- Modelado y estadística ---
+scikit-learn>=1.5    # LinearRegression, train_test_split y métricas
+scipy>=1.11          # Distribución t: p-valores e intervalos de confianza
+
+# --- Visualización ---
+matplotlib>=3.8      # Gráficas base
+seaborn>=0.13        # Mapa de calor de correlaciones
+
+# --- Persistencia de modelos ---
+joblib>=1.4          # Exportación/importación de los modelos entrenados
+
+# --- Calidad y pruebas ---
+pytest>=8.0          # Suite de pruebas automatizadas

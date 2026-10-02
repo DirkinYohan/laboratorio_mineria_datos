@@ -1,0 +1,20 @@
+{
+  "modelo": "energia",
+  "filas_antes": 10000,
+  "filas_despues": 10000,
+  "filas_eliminadas": 0,
+  "detalle_eliminacion": {
+    "nulos": 0,
+    "duplicados": 0,
+    "fuera_de_rango": 0
+  },
+  "criterio_atipicos": "Los valores atípicos se detectan con el criterio IQR (1,5) y se documentan en la auditoría. No se eliminan porque ninguno resultó imposible: todos caen dentro de rangos plausibles del dominio, por lo que representan variabilidad real del fenómeno.",
+  "codificacion_temporal": {
+    "decision": "Hora y Dia_Semana en escala lineal",
+    "r2_hora_lineal": 0.8968196536749335,
+    "r2_hora_ciclica": 0.7851430644321611,
+    "diferencia_r2": 0.11167658924277246,
+    "justificacion": "'Hora' no es cíclica en estos datos: sus valores recorren 1-24 de forma monótona y el consumo crece monótonamente con ella. Codificarla con seno/coseno reduce el R² de prueba frente a la codificación lineal, por lo que se conserva la escala original."
+  },
+  "archivo_procesado": "energia_clean.csv"
+}

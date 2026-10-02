@@ -1,0 +1,56 @@
+{
+  "modelo": "dolar",
+  "ecuacion": "Precio_Dolar = 3985.7833 + 4.9843·Dia - 870.7317·Inflacion - 1.3774·Tasa_interes",
+  "intercepto": 3985.7832908942446,
+  "criterio_mayor_impacto": "Se compara el valor absoluto del coeficiente estandarizado (β). El coeficiente bruto no es comparable entre variables porque sus escalas difieren (días, fracción decimal y porcentaje).",
+  "variable_mayor_impacto": "Dia",
+  "ranking_impacto": [
+    {
+      "posicion": 1,
+      "variable": "Dia",
+      "beta_estandarizado": 0.9975678768755012
+    },
+    {
+      "posicion": 2,
+      "variable": "Inflacion",
+      "beta_estandarizado": -0.006083410883003841
+    },
+    {
+      "posicion": 3,
+      "variable": "Tasa_interes",
+      "beta_estandarizado": -0.0009405138896582778
+    }
+  ],
+  "interpretaciones": [
+    {
+      "variable": "Dia",
+      "etiqueta": "Día",
+      "coeficiente": 4.984338715884641,
+      "p_valor": 0.0,
+      "beta_estandarizado": 0.9975678768755012,
+      "significativo": true,
+      "significancia": "altamente significativo (p < 0,001)",
+      "interpretacion": "Por cada unidad adicional de Día (días), Precio del dólar aumenta en promedio 4.9843 unidades monetarias, manteniendo constantes las demás variables."
+    },
+    {
+      "variable": "Inflacion",
+      "etiqueta": "Inflación",
+      "coeficiente": -870.7317083114698,
+      "p_valor": 0.09596653401383048,
+      "beta_estandarizado": -0.006083410883003841,
+      "significativo": false,
+      "significancia": "no significativo (p >= 0,05)",
+      "interpretacion": "Por cada unidad adicional de Inflación (fracción decimal), Precio del dólar disminuye en promedio 870.7317 unidades monetarias, manteniendo constantes las demás variables."
+    },
+    {
+      "variable": "Tasa_interes",
+      "etiqueta": "Tasa de interés",
+      "coeficiente": -1.3774312878081811,
+      "p_valor": 0.7972478128006397,
+      "beta_estandarizado": -0.0009405138896582778,
+      "significativo": false,
+      "significancia": "no significativo (p >= 0,05)",
+      "interpretacion": "Por cada unidad adicional de Tasa de interés (porcentaje), Precio del dólar disminuye en promedio 1.3774 unidades monetarias, manteniendo constantes las demás variables."
+    }
+  ]
+}

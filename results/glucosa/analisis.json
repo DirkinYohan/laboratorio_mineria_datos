@@ -1,0 +1,60 @@
+{
+  "modelo": "glucosa",
+  "nombre": "Nivel de Glucosa",
+  "variable_objetivo": "Nivel_Glucosa",
+  "unidad_objetivo": "mg/dL",
+  "variables": [
+    "Edad",
+    "IMC",
+    "Actividad_Fisica"
+  ],
+  "intercepto": 65.86086530452525,
+  "coeficientes": {
+    "Edad": 1.226590034499573,
+    "IMC": 0.9333730560350988,
+    "Actividad_Fisica": -2.085276343043282
+  },
+  "evaluacion": {
+    "metricas": {
+      "r2": 0.681371586540484,
+      "mae": 12.219782574464597,
+      "mse": 233.69300045085828,
+      "rmse": 15.28702065318348,
+      "n_muestras": 400.0,
+      "r2_ajustado": 0.6789577349233664
+    },
+    "metricas_prueba": {
+      "r2": 0.681371586540484,
+      "mae": 12.219782574464597,
+      "mse": 233.69300045085828,
+      "rmse": 15.28702065318348,
+      "n_muestras": 400.0,
+      "r2_ajustado": 0.6789577349233664
+    },
+    "metricas_completo": {
+      "r2": 0.685318826084698,
+      "mae": 12.13141409958661,
+      "mse": 235.1495480428147,
+      "rmse": 15.33458666031839,
+      "n_muestras": 2000.0,
+      "r2_ajustado": 0.6848458583884325
+    },
+    "linea_base": {
+      "r2": 0.0,
+      "mae": 22.324081646637964,
+      "mse": 734.2803948543736,
+      "rmse": 27.09760865564291,
+      "n_muestras": 400.0
+    },
+    "mejora_rmse_vs_linea_base": 0.4358535158046113
+  },
+  "interpretacion_desempeno": "El ajuste es moderado: R² = 0.6814, es decir, el modelo captura la tendencia principal, pero deja variabilidad sin explicar (68.14 % de la varianza de Nivel de glucosa). En promedio, el error de predicción es de 12.2198 mg/dL (MAE) y la desviación típica del error es de 15.2870 mg/dL (RMSE).",
+  "residuos": {
+    "residuo_medio": -0.09954912692340895,
+    "residuo_std": 15.33809853428603,
+    "residuo_min": -52.21934085939337,
+    "residuo_max": 53.35026987495638,
+    "asimetria": 0.012167032866284944,
+    "curtosis": 0.04119385751945126
+  }
+}

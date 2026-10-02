@@ -1,0 +1,72 @@
+{
+  "modelo": "energia",
+  "nombre": "Consumo de Energía",
+  "filas": 10000,
+  "columnas": [
+    "Temperatura",
+    "Hora",
+    "Dia_Semana",
+    "Consumo_Energia"
+  ],
+  "nulos": {
+    "Temperatura": 0,
+    "Hora": 0,
+    "Dia_Semana": 0,
+    "Consumo_Energia": 0
+  },
+  "duplicados": 0,
+  "perfil_columnas": [
+    {
+      "nombre": "Temperatura",
+      "tipo": "float64",
+      "nulos": 0,
+      "unicos": 10000,
+      "atipicos_iqr": 90,
+      "minimo": 5.387998741908287,
+      "maximo": 44.63118853218163,
+      "media": 24.92479311658316,
+      "desviacion": 5.0040219399790455,
+      "asimetria": -0.010951570842620816,
+      "fuera_de_rango": 0
+    },
+    {
+      "nombre": "Hora",
+      "tipo": "int64",
+      "nulos": 0,
+      "unicos": 24,
+      "atipicos_iqr": 0,
+      "minimo": 1.0,
+      "maximo": 24.0,
+      "media": 12.4936,
+      "desviacion": 6.921296805870089,
+      "asimetria": 0.0012347518790427616,
+      "fuera_de_rango": 0
+    },
+    {
+      "nombre": "Dia_Semana",
+      "tipo": "int64",
+      "nulos": 0,
+      "unicos": 7,
+      "atipicos_iqr": 0,
+      "minimo": 1.0,
+      "maximo": 7.0,
+      "media": 3.9994,
+      "desviacion": 2.0000499143686383,
+      "asimetria": 0.00045005626673471597,
+      "fuera_de_rango": 0
+    },
+    {
+      "nombre": "Consumo_Energia",
+      "tipo": "float64",
+      "nulos": 0,
+      "unicos": 10000,
+      "atipicos_iqr": 66,
+      "minimo": 185.1963838339356,
+      "maximo": 631.0931909290265,
+      "media": 400.0435223457631,
+      "desviacion": 63.825151990298416,
+      "asimetria": 0.017279473386941406,
+      "fuera_de_rango": 0
+    }
+  ]
+}

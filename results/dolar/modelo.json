@@ -1,0 +1,76 @@
+{
+  "modelo": "Precio_Dolar",
+  "variables": [
+    "Dia",
+    "Inflacion",
+    "Tasa_interes"
+  ],
+  "intercepto": 3985.7832908942446,
+  "ecuacion": "Precio_Dolar = 3985.7833 + 4.9843·Dia - 870.7317·Inflacion - 1.3774·Tasa_interes",
+  "coeficientes": [
+    {
+      "variable": "Dia",
+      "coeficiente": 4.984338715884641,
+      "error_estandar": 0.0182554973993064,
+      "t": 273.032205415138,
+      "p_valor": 0.0,
+      "beta_estandarizado": 0.9975678768755012,
+      "VIF": 1.008201635033578,
+      "ic_95": [
+        4.948448908041919,
+        5.020228523723966
+      ],
+      "significativo": true,
+      "interpretacion_significancia": "altamente significativo (p < 0,001)"
+    },
+    {
+      "variable": "Inflacion",
+      "coeficiente": -870.7317083114698,
+      "error_estandar": 521.801318423735,
+      "t": -1.6687035420718903,
+      "p_valor": 0.09596653401383048,
+      "beta_estandarizado": -0.006083410883003841,
+      "VIF": 1.0037514027381158,
+      "ic_95": [
+        -1896.5788073958302,
+        155.11539077289228
+      ],
+      "significativo": false,
+      "interpretacion_significancia": "no significativo (p >= 0,05)"
+    },
+    {
+      "variable": "Tasa_interes",
+      "coeficiente": -1.3774312878081811,
+      "error_estandar": 5.357913330915921,
+      "t": -0.2570835328485279,
+      "p_valor": 0.7972478128006397,
+      "beta_estandarizado": -0.0009405138896582778,
+      "VIF": 1.01081609541782,
+      "ic_95": [
+        -11.910942134942642,
+        9.156079559326466
+      ],
+      "significativo": false,
+      "interpretacion_significancia": "no significativo (p >= 0,05)"
+    }
+  ],
+  "variable_mayor_impacto": {
+    "segun_beta_estandarizado": "Dia",
+    "beta_estandarizado": 0.9975678768755012
+  },
+  "metricas_entrenamiento": {
+    "r2": 0.9947566971157091,
+    "mae": 40.46869556040156,
+    "mse": 2580.4620302623503,
+    "rmse": 50.798248299152505,
+    "n_muestras": 400.0
+  },
+  "metricas_prueba": {
+    "r2": 0.996312811756911,
+    "mae": 37.00645389507638,
+    "mse": 2376.9708765724663,
+    "rmse": 48.754188297750034,
+    "n_muestras": 100.0
+  },
+  "nota_metodologica": "El modelo se ajustó con las tres variables del enunciado, sin eliminar ninguna. La inferencia estadística (p-valores) muestra que solo 'Dia' es significativa, mientras que 'Inflacion' y 'Tasa_interes' no lo son; se conservan para respetar la especificación del laboratorio y porque su inclusión no deteriora el ajuste (VIF ≈ 1: no hay multicolinealidad)."
+}

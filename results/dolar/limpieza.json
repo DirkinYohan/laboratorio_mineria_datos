@@ -1,0 +1,13 @@
+{
+  "modelo": "dolar",
+  "filas_antes": 500,
+  "filas_despues": 500,
+  "filas_eliminadas": 0,
+  "detalle_eliminacion": {
+    "nulos": 0,
+    "duplicados": 0,
+    "fuera_de_rango": 0
+  },
+  "criterio_atipicos": "Los valores atípicos se detectan con el criterio IQR (1,5) y se documentan en la auditoría. No se eliminan porque ninguno resultó imposible: todos caen dentro de rangos plausibles del dominio, por lo que representan variabilidad real del fenómeno.",
+  "archivo_procesado": "dolar_clean.csv"
+}
